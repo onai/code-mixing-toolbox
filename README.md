@@ -76,3 +76,5 @@ The above command samples Hindi documents using the Hindi components of the code
 ## Examples
 
 ![](cmi_example.png)
+
+In the above example, we show an embedding space. The blue points correspond to English documents, the red points are Hindi documents. Starting from a source set of documents which are code-mixed (magenta), we find semantically similar content in the Hindi region (blue).
