@@ -1,5 +1,7 @@
 # Code Mixing Toolbox
 
+This tool leverages machine learning on code-switching to enable its use for information retrieval.
+
 Code-switching is a phenomenon where a speaker uses two or more languages within the same sentence or document boundary. Commonly used by multilingual speakers, the phenomenon is considered an impediment to downstream NLP analysis.
 
 Recent work allows us to model multilinguality and code-mixing and utilize it for cross-lingual information retrieval tasks.
