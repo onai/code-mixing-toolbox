@@ -51,7 +51,7 @@ python sample_code_mixed_words_model_meta.py /path/to/fasttext/skipgram/model.bi
 
 Here, the skipgram and kmeans models are from `fastText` and the `polyglot_toolbox` dependencies. The `<cluster_id_1>` and `<cluster_id_2>` parameters are integer values corresponding to the language labels of interest. Thus if the languages desired are labeled 0 and 1 by the `polyglot_toolbox` repository, `<cluster_id_1>` and `<cluster_id_2>` are 0 and 1 respectively.
 
-The command above will also store the CMI annotated comments in `/path/to/save/cmi_labeled_documents.txt`. This file contains one annotated document per line. The first token is the floating point CMI value, and the tokens of the document follow.
+The command above will also store the CMI annotated comments in `/path/to/save/cmi_labeled_documents.txt`. This file contains one annotated document per line. The first token is the floating point CMI value, and the tokens of the document follow. An example input corpus is [test/sample_documents.txt](test/sample_documents.txt), and the result is [test/sample_documents.cmi.txt](test/sample_documents.cmi.txt).
 
 The high CMI (>= 0.4) can be filtered out using:
 
@@ -66,6 +66,8 @@ First, discard any tokens not written in the language of choice
 ```
 python remove_non_hindi_words.py /path/to/code-mixed-documents.txt /path/to/skipgram/model.bin /path/to/kmeans/model.joblib > /path/to/code-mixed-documents.hindi.txt
 ```
+
+An example output document is [test/sample_documents.cmi.hindi.txt](test/sample_documents.cmi.hindi.txt)
 
 Next, sample the Hindi-majority documents using the following command:
 
